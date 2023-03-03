@@ -1,4 +1,4 @@
 # sinnvestor-dashboard
 
 Setup:
-- run ```npm install && npm start``` for both client and server side to start the development server
+- run ```npm install && npm start``` for client side to start the development server
