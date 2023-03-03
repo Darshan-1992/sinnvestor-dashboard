@@ -1,0 +1,16 @@
+$theme-colors: (
+    "primary": #233357,
+    "info": #F2B138,
+    "danger": #FF0000,
+    "success": #17A672,
+    "secondary": #BEBEBE,
+);
+@import "~bootstrap/scss/bootstrap";
+
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+
+@import "./core";
+
+@import "./custom";

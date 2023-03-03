@@ -1,0 +1,29 @@
+@import 'assets/scss/variables.scss';
+
+.navbar {
+    .nav-link {
+        font-size: 15px;
+        color: $primary;
+        margin-right: 25px;
+        font-family: 'Breymont-Bold', "Univers LT 55", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding: 0px 20px 0px 20px;
+        font-weight: bold;
+        &:hover,
+        &:focus {
+        color: #yellow;
+        
+        }
+    }
+
+    .dropdown {
+        &-toggle {
+            &::after {
+                display: none;
+            }
+        }
+        &-menu {
+            min-width: auto;
+        }
+    }
+}

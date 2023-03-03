@@ -1,0 +1,111 @@
+@import 'assets/scss/variables.scss';
+
+.custom-tabs {
+    .nav {
+        &-tabs {
+            border: 0;
+            display: flex;
+            margin-left: -5px;
+            margin-right: -5px;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            overflow-y: hidden;
+        }
+
+        &-item {
+            flex: 1 0 0%;
+            padding: 0 5px;
+        }
+
+        &-link {
+            border: 0;
+            display: block;
+            background-color: $light-gray;
+            width: 100%;
+            border-radius: 3px;
+            padding: 14px;
+            color: $font-color-dark;
+            white-space: nowrap;
+
+            &.active {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.sub-heading {
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: $font-bold;
+    }
+}
+
+.custom-select {
+    .select {
+        &__control {
+            border-color: #DAE0E7;
+            border-width: 2px;
+            border-radius: 3px;
+        }
+
+        &__value-container {
+            padding: 9px 15px;
+            font-size: 14px;
+            font-weight: $font-regular;
+        }
+
+        &__single-value {
+            color: $primary;
+        }
+
+        &__indicator {
+            color: $primary;
+
+            &-separator {
+                display: none;
+            }
+        }
+
+        &__option {
+            font-weight: $font-regular;
+        }
+    }
+}
+
+.form {
+    &-label {
+        font-weight: $font-bold;
+    }
+
+    &-control {
+        border-color: #DAE0E7;
+        border-width: 2px;
+        border-radius: 3px;
+        color: $primary;
+        font-size: 14px;
+        font-weight: $font-regular;
+        padding: 9px 15px;
+
+        &:focus {
+            box-shadow: none;
+            border-color: #aab3bc;
+        }
+    }
+}
+
+.progress {
+  height: 20px;
+  border-radius: 3px;
+
+  .progress-bar {
+    border-radius: 3px;
+  }
+}
+
+.fs-16 {
+  font-size: 16px;
+}

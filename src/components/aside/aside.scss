@@ -1,0 +1,68 @@
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/mixins.scss';
+
+.profile {
+    &-aside {
+        max-width: 330px;
+
+        @include mobile {
+          max-width: 100%;
+          margin-bottom: 40px;
+        }
+    }
+
+    &-name {
+        font-size: 24px;
+        font-weight: $font-bold;
+        line-height: 1.2;
+    }
+
+    &-since {
+        font-size: 16px;
+    }
+}
+
+.aside {
+    &-menu {
+        .list-group {
+            margin-top: 25px;
+            border-radius: 3px;
+            border: 0;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+            padding: 10px;
+
+            &-item {
+                margin-top: 2px;
+                margin-bottom: 2px;
+                border: 0;
+                padding: 0;
+
+                &-link {
+                    border: 0;
+                    padding: 12px 20px;
+                    border-radius: 3px;
+                    font-weight: $font-bold;
+                    color: $primary;
+                    font-size: 18px;
+                    display: block;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $primary;
+                        background-color: $light-gray;
+                    }
+    
+                    &.active {
+                        background-color: $primary;
+                        color: #ffffff;
+                    }
+                    .badge{
+                        float: right;
+                        margin-top: 4px;
+                        background-color: #ff0000;
+                    }
+                }
+            }
+        }
+    }
+}

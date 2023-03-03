@@ -1,0 +1,53 @@
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/mixins.scss';
+
+.voting {
+  &-card {
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    padding: 15px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-date {
+    color: $font-color-dark;
+    font-weight: $font-bold;
+  }
+
+  &-name {
+    color: $primary;
+    font-weight: $font-bold;
+    font-size: 24px;
+    height: 70px;
+  }
+
+  &-text {
+    font-size: 20px;
+    color: $font-color-dark;
+    font-weight: $font-bold;
+  }
+
+  &-progressbar {
+    margin-top: 20px;
+
+    &-item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    } 
+
+    &-label {
+      font-size: 16px;
+      color: $font-color-dark;
+      font-weight: $font-bold;
+    }
+
+  }
+}

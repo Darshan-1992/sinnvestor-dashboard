@@ -1,0 +1,45 @@
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/mixins.scss';
+
+.portfolio {
+    &-section {
+        padding-top: 110px;
+        
+        @include mobile {
+          padding-top: 0;
+        }
+    }
+
+    &-table {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        border-radius: 3px;
+        overflow: hidden;
+
+        table {
+            thead {
+                th {
+                    background-color: $light-gray;
+                    padding-top: 11px;
+                    padding-bottom: 11px;
+                    font-size: 16px;
+                }
+            }
+
+            td a {
+                color: #A2C4F5;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .table-striped > tbody > tr:nth-of-type(odd) > * {
+            --bs-table-accent-bg: #fff;
+        }
+        .table-striped > tbody > tr:nth-of-type(even) > * {
+            --bs-table-accent-bg: #F2F2F2;
+        }
+    }
+}

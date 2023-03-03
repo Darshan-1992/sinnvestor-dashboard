@@ -1,0 +1,94 @@
+@import 'assets/scss/variables.scss';
+@import 'assets/scss/mixins.scss';
+
+.postbox {
+    &-section {
+        padding-top: 10px;
+        
+        @include mobile {
+          padding-top: 0;
+        }
+        .sub-heading{
+        a{
+            float:right;
+        }
+        h3{
+              float:left;
+        }
+        clear:both;
+        display:block;
+        }  
+
+
+    }
+
+    &-list {
+        margin-top:100px;
+         ul{
+         list-style:none;
+         padding-left:0;
+         color:#233357d4;
+         }
+        .thread{
+             margin-top:20px;
+             box-shadow: 1px 2px 5px 1px #8888887a;
+             padding:10px;
+            cursor: pointer;
+            .badge-yellow{
+                float: right;
+                background-color: #f2b138;
+            }
+
+             &-reply{
+                
+                 margin-top:20px;
+
+                 img,h2,h4 {
+                      display:none;
+                 }
+
+                 .e-card-content {
+                 padding:10px;
+                 margin-left: auto;
+                 width: 90%;
+                     background-color: #233357;
+                    color: #ffffff;
+
+                 }
+
+                 .e-card .timestap{
+                 float:right;
+                font-weight: 500;
+                 }
+             }
+             .e-card .timestap{
+              float:right;
+              font-weight: 500;
+             }
+             h2 {font-size: 20px;
+             padding: 0 0 0.5rem 0;}
+             h4 { 
+             font-size: 14px;
+             padding: 0.2rem 0 0.2rem 0;}
+             img{
+             width:90%;
+             }
+             clear:both;
+        }
+        .unread{
+             border-left: 6px solid #f2b138;
+              font-weight: 600;
+
+                 .e-card-content {
+               font-weight: 500;
+                    
+                 }
+                .e-card .timestap{
+              color:#f2b138;
+              font-weight: 600;
+             }
+             color:#233357;
+        }
+    
+    }
+}

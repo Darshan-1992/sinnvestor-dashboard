@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Univers LT';
+	src: url('../fonts/UniversLT-Bold.eot');
+	src: url('../fonts/UniversLT-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLT-Bold.woff2') format('woff2'),
+		url('../fonts/UniversLT-Bold.woff') format('woff'),
+		url('../fonts/UniversLT-Bold.ttf') format('truetype'),
+		url('../fonts/UniversLT-Bold.svg#UniversLT-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Univers LT';
+	src: url('../fonts/UniversLT.eot');
+	src: url('../fonts/UniversLT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLT.woff2') format('woff2'),
+		url('../fonts/UniversLT.woff') format('woff'),
+		url('../fonts/UniversLT.ttf') format('truetype'),
+		url('../fonts/UniversLT.svg#UniversLT') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Univers LT';
+	src: url('../fonts/UniversLT-Light.eot');
+	src: url('../fonts/UniversLT-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLT-Light.woff2') format('woff2'),
+		url('../fonts/UniversLT-Light.woff') format('woff'),
+		url('../fonts/UniversLT-Light.ttf') format('truetype'),
+		url('../fonts/UniversLT-Light.svg#UniversLT-Light') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
