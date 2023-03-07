@@ -57,9 +57,16 @@ const [data, setData] = useState([]);
            <span></span>
           
          }
-         
-
+           </NavLink>
             
+          </ListGroup.Item>
+            <ListGroup.Item>
+          <NavLink to='/resolutions' className="list-group-item-link">Shareholders Resolutions 
+           { (data?.resolutions_unred_count) ? 
+           <span className="badge badge-red">{data?.resolutions_unred_count}</span> :
+           <span></span>
+          
+         }
            </NavLink>
             
           </ListGroup.Item>
