@@ -2,7 +2,7 @@ import { Navbar, Nav, Container, NavDropdown, Toast, ToastContainer } from 'reac
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons'
 
-import logo from "assets/images/logo.png";
+import logo from "assets/images/snvst_logo_main.svg";
 import userImg from "assets/images/user.png";
 
 import 'components/header/header.scss';
@@ -42,6 +42,7 @@ const Header = () => {
           <Nav
             className="me-auto my-2 my-lg-0"
             navbarScroll
+            style={{ display: 'none' }}
           >
             <Nav.Link href="https://www.sinnvestment.eu#about-us">ÜBER UNS</Nav.Link>
             <Nav.Link href="https://www.sinnvestment.eu#fundernation">FUNDERNATION</Nav.Link>
@@ -57,6 +58,7 @@ const Header = () => {
               title={ <div><FontAwesomeIcon icon={faEarthAmericas} className="me-1" /> En</div> } 
               id="language" 
               align={{ lg: 'end' }}
+              style={{ display: 'none' }}
             >
                 <NavDropdown.Item>English</NavDropdown.Item>
                 <NavDropdown.Item>Deutsch</NavDropdown.Item>
